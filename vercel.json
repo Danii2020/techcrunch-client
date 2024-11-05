@@ -1,0 +1,14 @@
+{
+    "functions": {
+      "api/postJob": {
+        "runtime": "nodejs22.x"
+      }
+    },
+    "cron": {
+      "job_daily_post": {
+        "schedule": "0 0 * * *",
+        "path": "/api/postJob"
+      }
+    }
+  }
+  
