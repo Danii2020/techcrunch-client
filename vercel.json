@@ -1,14 +1,8 @@
 {
-    "functions": {
-      "api/postJob": {
-        "runtime": "nodejs20.x"
-      }
-    },
     "crons": [
-      {
-        "schedule": "0 0 * * *",
-        "path": "/api/postJob"
-      }
+        {
+            "schedule": "0 0 * * *",
+            "path": "/cron"
+        }
     ]
-  }
-  
+}
