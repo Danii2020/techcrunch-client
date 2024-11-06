@@ -1,7 +1,7 @@
 {
     "functions": {
       "api/postJob": {
-        "runtime": "nodejs"
+        "runtime": "nodejs20.x"
       }
     },
     "crons": [
