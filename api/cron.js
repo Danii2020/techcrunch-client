@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from 'axios/dist/node/axios.cjs';
 
 module.exports = async (req, res) => {
     const url = "https://techcrunch-bot.onrender.com/bot";
