@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const cron = async () => {
+module.exports = async (req, res) => {
     const url = "https://techcrunch-bot.onrender.com/bot";
     const toNumber = "593994029754"
     const data = {
@@ -15,4 +15,4 @@ export const cron = async () => {
         console.error("Error making POST request:", error.message);
         res.status(500).send("Error making POST request");
     }
-}
+  };
