@@ -14,5 +14,4 @@ const sendRequest = async () => {
         console.error("Error making POST request:", error.message);
     }
 }
-
 sendRequest()
