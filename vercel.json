@@ -2,19 +2,11 @@
     "crons": [
         {
             "schedule": "25 0 * * *",
-            "path": "/api/botCron"
+            "path": "/api/cron"
         },
         {
             "schedule": "27 0 * * *",
-            "path": "/api/botCron"
-        },
-        {
-            "schedule": "0 0 */2 * *", 
-            "path": "/api/botCron"
-        },
-        {
-            "schedule": "3 0 */2 * *", 
-            "path": "/api/botCron"
+            "path": "/api/cron"
         }
     ]
 }
