@@ -1,7 +1,7 @@
 import axios from 'axios/dist/node/axios.cjs';
 module.exports = async (req, res) => {
-    const url = "https://whatsapp-automation-6lyn.onrender.com/api/send-message";
-    const number = "14155238886";
+    const url =  process.env.WHATSAPP_AUTOMATION_RENDER_URL;
+    const number = process.env.TWILIO_PHONE_NUMBER;
     const message = "join prize-fierce";
     const data = { number, message };
 

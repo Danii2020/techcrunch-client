@@ -1,8 +1,11 @@
 import axios from 'axios/dist/node/axios.cjs';
 
+require('dotenv').config();
+
 module.exports = async (req, res) => {
-    const url = "https://techcrunch-bot.onrender.com/bot";
-    const toNumber = "593994029754"
+    const url = process.env.BOT_RENDER_URL
+    console.log(url)
+    const toNumber = process.env.TO_PHONE_NUMBER
     const data = {
         "to_number": toNumber
     };
